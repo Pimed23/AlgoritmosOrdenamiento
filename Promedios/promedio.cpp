@@ -52,15 +52,15 @@ int main() {
                 tam = tam / 10;
 
             fileOut << 1 * tam << " " << c0 / 10.0 << endl;
-            fileOut << 2 * tam << " " << c0 / 10.0 << endl;
-            fileOut << 3 * tam << " " << c0 / 10.0 << endl;
-            fileOut << 4 * tam << " " << c0 / 10.0 << endl;
-            fileOut << 5 * tam << " " << c0 / 10.0 << endl;
-            fileOut << 6 * tam << " " << c0 / 10.0 << endl;
-            fileOut << 7 * tam << " " << c0 / 10.0 << endl;
-            fileOut << 8 * tam << " " << c0 / 10.0 << endl;
-            fileOut << 9 * tam << " " << c0 / 10.0 << endl;
-            fileOut << 10 * tam << " " << c0 / 10.0 << endl;
+            fileOut << 2 * tam << " " << c1 / 10.0 << endl;
+            fileOut << 3 * tam << " " << c2 / 10.0 << endl;
+            fileOut << 4 * tam << " " << c3 / 10.0 << endl;
+            fileOut << 5 * tam << " " << c4 / 10.0 << endl;
+            fileOut << 6 * tam << " " << c5 / 10.0 << endl;
+            fileOut << 7 * tam << " " << c6 / 10.0 << endl;
+            fileOut << 8 * tam << " " << c7 / 10.0 << endl;
+            fileOut << 9 * tam << " " << c8 / 10.0 << endl;
+            fileOut << 10 * tam << " " << c9 / 10.0 << endl;
         }
     }
     return 0;
