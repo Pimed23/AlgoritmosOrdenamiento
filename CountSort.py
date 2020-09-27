@@ -23,8 +23,8 @@ def countSort(arr):
 
     return arr
 
-tam = [100000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000]
-fileIn = "Entradas/testN.txt"
+tam = [15000, 30000, 45000, 60000, 75000, 90000, 105000, 120000, 135000, 150000]
+fileIn = "Entradas/testNCounting.txt"
 fileOut = "Salidas/CountSort/pyt_outN.txt"
 
 for i in range(10) :
@@ -39,7 +39,7 @@ for i in range(10) :
         arr = [0] * tam[j]
         
         for k in range (tam[j]) :
-            arr[k] = int(data[i])
+            arr[k] = int(data[k])
 
         t0 = time()
         countSort(arr)

@@ -7,7 +7,7 @@ void selectionSort( int *, int );
 
 // MAIN FUNCTION
 int main() {
-    int tam[] = {100000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 90000, 1000000};
+    int tam[] = {10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000};
     FILE *in, *out;
     unsigned t0, t1;
 
@@ -16,7 +16,7 @@ int main() {
         fileIn[13] = i + 48;
 
         char fileOut[] = "Salidas/SelectionSort/cpp_out_.txt";
-        fileOut[26] = i + 48;
+        fileOut[29] = i + 48;
 
         out = fopen(fileOut, "w");
         for(int j = 0; j < 10; ++j) {

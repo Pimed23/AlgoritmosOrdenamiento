@@ -36,7 +36,7 @@ for i in range(10) :
         arr = [0] * tam[j]
         
         for k in range (tam[j]) :
-            arr[k] = int(data[i])
+            arr[k] = int(data[k])
 
         t0 = time()
         heapSort(arr,tam[j])

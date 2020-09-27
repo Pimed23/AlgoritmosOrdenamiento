@@ -10,8 +10,8 @@ def insertSort(arr):
                 j -= 1
         arr[j + 1] = key 
 
-tam = [100000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000]
-fileIn = "Entradas/testN.txt"
+tam = [10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000]
+fileIn = "Entradas/testNCounting.txt"
 fileOut = "Salidas/InsertSort/pyt_outN.txt"
 
 for i in range(10) :
@@ -26,7 +26,7 @@ for i in range(10) :
         arr = [0] * tam[j]
         
         for k in range (tam[j]) :
-            arr[k] = int(data[i])
+            arr[k] = int(data[k])
 
         t0 = time()
         insertSort(arr)
