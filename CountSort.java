@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.util.Scanner;
 
-public class CountingSort {
+public class CountSort {
     void countingSort(int array[], int size) {
         int[] output = new int[size + 1];
 
@@ -39,9 +39,9 @@ public class CountingSort {
 
         for(int i = 0; i < 10; ++i) {
             String fileIn = "Entradas/test";
-            String fileOut = "Salidas/CountingSort/jav_out";
+            String fileOut = "Salidas/CountSort/jav_out";
 
-            fileIn = fileIn.concat(String.valueOf(i)+".txt");
+            fileIn = fileIn.concat(String.valueOf(i)+"Counting.txt");
             fileOut =  fileOut.concat(String.valueOf(i)+".txt");
 
             File out = new File(fileOut);
@@ -61,7 +61,7 @@ public class CountingSort {
                             ++lineCount;
                         }
     
-                        CountingSort bs = new CountingSort();
+                        CountSort bs = new CountSort();
                         t0 = System.currentTimeMillis();
                         bs.countingSort(arr, tam[j]);
                         t1 = System.currentTimeMillis();

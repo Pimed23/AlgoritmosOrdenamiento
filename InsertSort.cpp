@@ -7,7 +7,7 @@ void insertionSort( int *, int );
 
 // MAIN FUNCTION
 int main() {
-    int tam[] = {10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000};
+    int tam[] = {100000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000};
     FILE *in, *out;
     unsigned t0, t1;
 
@@ -15,7 +15,7 @@ int main() {
         char fileIn[] = "Entradas/test_.txt";
         fileIn[13] = i + 48;
 
-        char fileOut[] = "Salidas/InsertionSort/cpp_out_.txt";
+        char fileOut[] = "Salidas/InsertSort/cpp_out_.txt";
         fileOut[26] = i + 48;
 
         out = fopen(fileOut, "w");
