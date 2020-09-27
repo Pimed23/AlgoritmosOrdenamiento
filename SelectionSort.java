@@ -19,7 +19,7 @@ public class SelectionSort {
     } 
 
     public static void main(String[] args) {
-        int tam[] = {100000, 200000, 300000, 400000, 500000, 600000, 700000, 800000, 900000, 1000000};
+        int tam[] = {10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000};
         double t0, t1;
 
         for(int i = 0; i < 10; ++i) {
