@@ -12,6 +12,7 @@ int main() {
     
     for(int i = 0; i < 7; ++i) {
         for(int j = 0; j < 3; ++j) {
+            int tam = 100000;
             double c0 = 0, c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0, c7 = 0, c8 = 0, c9 = 0;
             string outs = algoritmos[i] + lenguajes[j] + ".txt";
             ofstream fileOut(outs, ios::out);
@@ -46,16 +47,20 @@ int main() {
                     ++count;
                 }
             }
-            fileOut << c0 / 10.0 << endl;
-            fileOut << c1 / 10.0 << endl;
-            fileOut << c2 / 10.0 << endl;
-            fileOut << c3 / 10.0 << endl;
-            fileOut << c4 / 10.0 << endl;
-            fileOut << c5 / 10.0 << endl;
-            fileOut << c6 / 10.0 << endl;
-            fileOut << c7 / 10.0 << endl;
-            fileOut << c8 / 10.0 << endl;
-            fileOut << c9 / 10.0 << endl;
+
+            if( i == 0 )
+                tam = tam / 10;
+
+            fileOut << 1 * tam << " " << c0 / 10.0 << endl;
+            fileOut << 2 * tam << " " << c0 / 10.0 << endl;
+            fileOut << 3 * tam << " " << c0 / 10.0 << endl;
+            fileOut << 4 * tam << " " << c0 / 10.0 << endl;
+            fileOut << 5 * tam << " " << c0 / 10.0 << endl;
+            fileOut << 6 * tam << " " << c0 / 10.0 << endl;
+            fileOut << 7 * tam << " " << c0 / 10.0 << endl;
+            fileOut << 8 * tam << " " << c0 / 10.0 << endl;
+            fileOut << 9 * tam << " " << c0 / 10.0 << endl;
+            fileOut << 10 * tam << " " << c0 / 10.0 << endl;
         }
     }
     return 0;
